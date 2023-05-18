@@ -176,16 +176,12 @@
     2: la imagen debe aparecer a la derecha y rodeada de texto por la izquierda
     */
     /* 1: */float: right;
-    border: dashed 5px white;
     margin-left: 10px;
-      -webkit-border-radius: 30px 30px 30px 30px ;  /* Safari  */
-    -moz-border-radius: 30px 30px 30px 30px ;     /* Firefox */
-    border-radius: 30px 30px 30px 30px ;     /* Firefox */
   }
   
   .imageRight img{
     width: 236px;
-    height: 412px;
+    height: 212px;
   }
 
   #two {
