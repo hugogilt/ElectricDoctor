@@ -238,6 +238,10 @@
     color: #AEC0B1;
     list-style:none; 
   }
+
+  #rightNav img{
+    border-bottom: solid 5px transparent;
+  }
   
   #rightNav img:hover{
     color: #AEC0B1;
@@ -246,10 +250,26 @@
     margin-bottom: 5px;
   
   }
-  
-  #email {
+
+  #insta {
+    height: 64px;
+    width: 60px;
+  }
+
+  #emailGrande {
     text-align: right;
     margin-right: 5%;
+    font-size: 120%;
+    color: white;
+
+  }
+  
+  #emailPequeño {
+    text-align: right;
+    margin-right: 5%;
+    font-size: 120%;
+    color: white;
+    display: none;
   }
 
   
@@ -305,15 +325,29 @@
   
   
   @media all and (max-width: 500px) {
+    body {
+      background: url('../images/fondo.jpeg');
+    }
+
+
     #rightNav {
       text-align: center;
       width: 100%;
-      margin-bottom: 20%;
+      margin-bottom: 10%;
       margin-right: 0px;
       margin-left: 0px;
-      margin-top: 0px; 
+      margin-top: 10px; 
       padding-left: 0px;
       border-top: 2px dashed #4D4D4D;
+    }
+
+    #emailGrande {
+      display: none;
+    }
+
+    #emailPequeño {
+      text-align: center;
+      display: block;
     }
   
     .imageLeft{
@@ -327,6 +361,18 @@
       width: 90%;
       height: 90%;
     }
+
+    #tiktok {
+      padding-right: 2%;
+    }
+
+    #insta{
+     padding-right: 5%;
+    }
+
+    #gmail {
+      padding-right: 2%;
+    }
   
     .imageRight{
       /*
@@ -337,6 +383,7 @@
     }
   
     #header{
+      height: 250px;
       margin-top: 50px;
       padding-top:  100px;
       background-position: center;
