@@ -8,7 +8,7 @@
     y hacer que ocupe toda la pantalla con cover
     */
   
-    /* 1: */background: url('../images/fondo2.jpeg');
+    /* 1: */background: url('../images/fondogrande.jpeg');
     /* 2: */background-size: cover;
     /* 3: */background-attachment: fixed;
     /* 4: */
@@ -186,13 +186,13 @@
     object-position: 60% 100%;
   }
 
-  #two {
+  .segundoparaabajo {
     text-align: justify;
     overflow: auto;
     background-color: #5D6D7E;
     margin-left: 1%;
     margin-right: 5%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px;
     -webkit-border-radius: 30px 30px 30px 30px ;  /* Safari  */
     -moz-border-radius: 30px 30px 30px 30px ;     /* Firefox */
@@ -200,6 +200,8 @@
     border: 1px dashed black;
     
   }
+
+
   
   .imageLeft {
     /*
