@@ -3,11 +3,16 @@
   }
   
   body {
-    background: url('../images/fondogrande.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    
-    
+    /* 
+    6: Hay que fijar el fondo de la pagina
+    y hacer que ocupe toda la pantalla con cover
+    */
+  
+    /* 1: */background: url('../images/fondogrande.jpeg');
+    /* 2: */background-size: cover;
+    /* 3: */background-attachment: fixed;
+    /* 4: */
+    /* 5: */
       
     font-family: 'Arial', monospace;
   }
@@ -89,12 +94,18 @@
   }
   
   #nav li{
-    display: inline;
+    /*
+    9: El menu debe ocupar solo una linea
+    */
+    /* 1: */display: inline;
     padding-left: 5px;  
   }
   
   #nav li a:hover{
-    text-decoration: underline rgb(255, 174, 0);
+    /* 
+    10: aL pasar el raton encima del enlace debe aparecer un subrayado naranja
+    */
+    /* 1: */ text-decoration: underline rgb(255, 174, 0);
     
   }
 
@@ -105,7 +116,11 @@
   }
 
   #main {
-    float: left;
+    /*
+    3: La zona principal debe ocupar el 90% del espacio y estar a la izquierda
+    */
+    /* 1: */width: 90%;
+    /* 2: */float: left;
     border-right: 1px dashed white;
     color: #AEC0B1;
   }
@@ -156,9 +171,47 @@
     
   }
 
+  #silence {
+    position: relative;
+    clear: left;
+    text-align: justify;
+    background-color: #5D6D7E;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 1%;
+    -webkit-border-radius: 30px 30px 30px 30px ;  /* Safari  */
+    -moz-border-radius: 30px 30px 30px 30px ;     /* Firefox */
+    border-radius: 30px 30px 30px 30px ;     /* Firefox */
+    overflow: auto;
+    border: 1px dashed black;
+    width: 100px;
+    
+  }
+
+  #next {
+    clear: left;
+    text-align: justify;
+    background-color: #5D6D7E;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 40%;
+    margin-left: 40%;
+    -webkit-border-radius: 30px 30px 30px 30px ;  /* Safari  */
+    -moz-border-radius: 30px 30px 30px 30px ;     /* Firefox */
+    border-radius: 30px 30px 30px 30px ;     /* Firefox */
+    overflow: auto;
+    border: 1px dashed black;
+    
+  }
+
   .imageRight {
-    float: right;
+    /*
+    2: la imagen debe aparecer a la derecha y rodeada de texto por la izquierda
+    */
+    /* 1: */float: right;
     margin-left: 10px;
+
+
   }
   
   .imageRight img{
@@ -183,10 +236,32 @@
     
   }
 
+  #rep_motos img{
+    object-fit: cover;
+    object-position:60% 20%;
+  }
+
+  #NextNx1 img{
+    object-fit: cover;
+    object-position: 10% 40%;
+    height: 352px;
+
+    /* max-width: 100%; ESTO ES LO MISMO QUE LO DE ARRIBA  DE OTRO MODO MAS EXACTO
+    height: auto; */
+  }
+
+  #SilenceS02 img{
+    object-fit: cover;
+    object-position: 10% 40%;
+    height: 352px;
+  }
 
   
   .imageLeft {
-    float: left;
+    /*
+    1: la imagen debe aparecer a la izquierda y rodeada de texto por la derecha
+    */
+    /* 1: */float: left;
   
     border: dashed 5px white;
     margin-right: 10px;
@@ -206,6 +281,9 @@
   
   
   #rightNav {
+    /*
+    4: El menu debe aparecer centrado
+    */
     right: 0px;
     text-align: center;
     color: #AEC0B1;
@@ -254,8 +332,12 @@
   
   
   #footer{
-    width: 100%;
-    bottom: 0px;
+    /*
+    11: Tengo que dejar fijo el pie de pagina en la parte inferior
+    */
+    /*2:*/width: 100%;
+    /*3:*/bottom: 0px;
+    
     background-color: #4D5656;
     text-align: center;
     color: white;
@@ -271,7 +353,10 @@
   }
   
   #footer a:hover{
-    text-decoration: underline black;
+    /* 
+    12: Al pasar el raton encima del enlace debe aparecer un subrayado naranja encima
+    */
+    /* 1: */text-decoration: underline black;
     border-top: solid 5px #FF9900;
   
   }
@@ -322,7 +407,10 @@
     }
   
     .imageLeft{
-      float: none;
+      /*
+      14: la imagen debe ocupar todo el espacio sin que se vea texto
+      */
+      /* 1: */float: none;
       text-align: center;
     }
     .imageLeft img{
@@ -343,7 +431,10 @@
     }
   
     .imageRight{
-      float: none;
+      /*
+      14: la imagen debe ocupar todo el espacio sin que se vea texto
+      */
+      /* 1: */float: none;
       text-align: center;
     }
   
@@ -367,13 +458,19 @@
 
   
     #rightNav img{
-      width: 15%;
+      /*
+      15: las imagenes se hacen mas pequeñas 
+      */
+      /* 1: */width: 15%;
   
       margin: 0px;
     }
   
     #rightNav li{
-      display: inline;   
+      /*
+      16: el menu lateral debe ocupar una linea
+      */
+      /* 1: */display: inline;   
     }
     #rightNav ul{
        padding-left: 0%;
@@ -388,7 +485,10 @@
     }
   
     #main {
-      width: 100%;
+      /*
+      17: la capa principal ocupa todo el ancho
+      */
+      /* 1: */ width: 100%;
     }
   
     #main h2{
@@ -399,7 +499,10 @@
       padding-bottom: 20px;
     }
     #footer a:hover{
-      border-top: solid transparent;
+      /* 
+      12: Al pasar el raton encima del enlace debe aparecer un subrayado naranja encima
+      */
+      /* 1: */  border-top: solid transparent;
   
     
     }
